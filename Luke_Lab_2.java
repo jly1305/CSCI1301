@@ -1,4 +1,4 @@
-//This program created by Lke Tierney, for course CSCI 1301, in fall 2023 in 09/07/2023. For lab 2 activity.
+//This program created by Luke Tierney, for course CSCI 1301, in fall 2023 in 09/07/2023. For lab 2 activity.
 
 public class Luke_Lab_2
 {
@@ -48,15 +48,43 @@ public class Luke_Lab_2
     System.out.println("x and y values are " + x + " and " + y + ". The sum is " + (x + y ) + ". Subtraction is " + (y - x) + ". Multiplication is " + (x * y) + ". Division is " + (y / x) + " ");
     
     double r, a, b;
-    
     a = 6;
     b = 5;
+    r = (a + 3) / ( b - 1);
     
-    r = 
-
-
+    System.out.println(r);
     
+    double A, R, B;
+    A = 3;
+    B = 6;
+    R = 5 * ((3 * (A + 2) + 1) / (2 * ((B/2)-2) + 1) );
     
+    System.out.println(R);
+ 
+    double V1, V2, V3, V4;
+    V1 = 5;
+    V2 = 12;
+    V3 = 12;
+    V4 = 35;
+    
+    System.out.println("Original V1 Value: " + V1 + ". New V1 Value: " + (V1 += 5) + " ");
+    System.out.println("Original V2 Value: " + V2 + ". New V2 Value: " + (V2 -= 2) + " ");
+    System.out.println("Original V3 Value: " + V3 + ". New V3 Value: " + (V3 *= 3) + " ");
+    System.out.println("Original V4 Value: " + V4 + ". New V4 Value: " + (V4 /= 7) + " ");
+    
+    final double PI = 3.14;
+    
+    double radius = 6;
+    
+    double area = (PI * (radius * radius));
+    double circumfrence = (2 * PI * radius);
+    
+    System.out.println("Area of the circle: " + area + " ");
+    System.out.println("Circumfrence of the circle: " + circumfrence + " ");
+    System.out.println("Area of the sphere: " + ((4) * PI * (radius * radius)) + " ");
+    System.out.println("Volume of the sphere: " + ((4/3) * PI * radius * radius * radius) + " ");
+    
+     
    }
 }
       
