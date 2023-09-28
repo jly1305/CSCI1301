@@ -94,26 +94,22 @@ public class luke_lab_4
          System.out.println("How old are you?");
          int userAge = keyboard.nextInt();
          System.out.println("Did you pass the computer test? (T/F)");
-         char computerTestPass = keyboard.next().toLowerCase().charAt(0);
+         char computerTestPass = keyboard.next().toUpperCase().charAt(0);
          System.out.println("Did you pass the road test? (T/F)");
-         char roadTestPass = keyboard.next().toLowerCase().charAt(0);
+         char roadTestPass = keyboard.next().toUpperCase().charAt(0);
          
          if (userAge > 18)
          {
             if (computerTestPass == 'T')
             {
                if (roadTestPass == 'T')
-               {
-               System.out.println("You passed!");
-               }
+                  System.out.println("You passed!");
                else
-               {
-               System.out.println("You did not pass becuase you did not pass the computer test");
-               }
+                  System.out.println("You did not pass becuase you did not pass the road test");
             }
             else
             {
-            System.out.println("You are ineligible because you did not pass the road test");
+            System.out.println("You are ineligible because you did not pass the computer test");
             } 
          }
          else
@@ -121,6 +117,48 @@ public class luke_lab_4
          System.out.println("You are ineligible because you are under 18 years of age");        
          }
         
+        
+         //#9
+         System.out.println("Enter the first number");
+         double firstNumber = keyboard.nextDouble();
+         System.out.println("Enter the second number");
+         double secondNumber = keyboard.nextDouble();
+         
+         if (firstNumber > secondNumber)
+         {
+            System.out.println("Number one is  greater than number two");
+         }
+         else if (firstNumber < secondNumber)
+         {
+            System.out.println("Number one is less than number two");
+         }
+         else if (firstNumber == secondNumber)
+         {
+            System.out.println("Number one is equal to number two");
+         }
+        
+         //#2 new sheet
+         System.out.println("Enter a number");
+         int userInputInRange = keyboard.nextInt();
+         
+         if (userInputInRange >= -10 && userInputInRange <= 10)
+            System.out.println("Number in range");
+         else
+            System.out.println("Number out of range"); 
+         
+         //#3 new sheet
+         System.out.println("Enter a letter");
+         char userCharacterInRange = keyboard.next().toUpperCase().charAt(0);
+         
+         if (userCharacterInRange >= 'A' && userCharacterInRange <= 'Z')
+            System.out.println("Valid Character");
+         else
+            System.out.println("Invalid Character");
+            
+            
+         
+        
+       
         
         
 
