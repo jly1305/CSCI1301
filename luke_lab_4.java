@@ -156,11 +156,85 @@ public class luke_lab_4
             System.out.println("Invalid Character");
             
             
+         //#4 new sheet
+         System.out.println("Enter a number");
+         int userInputNumber = keyboard.nextInt();
          
+         if (userInputNumber % 2 == 0 || userInputNumber % 5 == 0)
+            System.out.println("Your number is even or a multiple of five");
+         else 
+            System.out.println("Your number is invalid");           
         
-       
+         //#5
+         System.out.println("Enter a day of the week (MTWHFSN) ");
+         String dayOfTheWeekUserInput = keyboard.next();
+         char letterInp = dayOfTheWeekUserInput.toUpperCase().charAt(0);
+         
+         if (letterInp == 'M' || letterInp == 'T' || letterInp == 'W' || letterInp == 'H' || letterInp == 'F')
+            System.out.println("This is a week day");
+         else if (letterInp == 'S' || letterInp == 'N')
+            System.out.println("This is a weekend day");
+            
+            
+         //#6
+         int result;  
+         System.out.println("Enter a value");
+         int inputUserInput = keyboard.nextInt();
+         
+         if (inputUserInput % 7 == 0)
+            result = inputUserInput;
+         else
+            result = (inputUserInput * 3);
+         System.out.println("Input: " + inputUserInput + " Result: " + result);
+         
+         //#7 
+        System.out.println("Enter a character:");
+        String monthInput = keyboard.next();
+        char monthInputChar = monthInput.toLowerCase().charAt(0);
         
+        switch (monthInputChar)
+        {
+            case 'j':
+               System.out.println("January, June, July");
+               break;
+            case 'o':
+               System.out.println("October");
+               break;
+            case 'f':
+               System.out.println("February");
+               break;
+            case 'n':
+               System.out.println("November");
+               break;
+            case 'm':
+               System.out.println("March, May");
+               break;
+            case 'd':
+               System.out.println("December");
+               break;
+            case 'a':
+               System.out.println("April, August");
+               break;
+            default:
+               System.out.println("Wrong Input");
+        }
+         
+        //#8
+        System.out.println("Enter your name");
+        String u_Name = keyboard.next();
         
+        System.out.println("Enter a number with a shitton of decimal places");
+        double d_Num = keyboard.nextDouble();
+        
+        System.out.printf("The name is %s and the number is %f \n", u_Name, d_Num);
+        System.out.printf("The name is %s and the number is %.4f \n", u_Name, d_Num);
+        System.out.printf("The name is %s and the number is %.2f \n", u_Name, d_Num);
+        System.out.printf("The name is %s and the number is %6.2f \n", u_Name, d_Num);
+        System.out.printf("The name is %s and the number is %4.0f \n", u_Name, d_Num);
+        System.out.printf("The name is %s and the number is %6.2f \n", u_Name, d_Num);
+        
+         
+                
 
 	
 
