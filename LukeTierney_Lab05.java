@@ -71,8 +71,54 @@ public class LukeTierney_Lab05
       
       System.out.println("Congratulations, the number is " + randomNumber1 + " and you guessed " + kount + " times.");
       
-   
+
+   //#6 
+      int oddNumbers = 1;
+      int cCount = 0;
       
+      do
+      {
+         System.out.print(oddNumbers + cCount + " ");
+         cCount = cCount + 2;
+      
+      } while (cCount < 50);
+   
+   //#7
+      String yesOrNo;
+      char repeat;
+
+      do
+      {
+         System.out.println("\nEnter sales for Branch 1: ");
+         int branchOneSales = keyboard.nextInt();
+
+         System.out.println("Enter sales for Branch 2: ");
+         int branchTwoSales = keyboard.nextInt();
+
+         System.out.println("Enter sales for Branch 3: ");
+         int branchThreeSales = keyboard.nextInt();
+
+         keyboard.nextLine();
+
+         System.out.println("Average Sales for 3 Branches: " + ((branchOneSales + branchTwoSales + branchThreeSales) / 3));
+
+         System.out.println("Do you want to continue? (y/n)");
+         
+         yesOrNo = keyboard.nextLine();
+         repeat = yesOrNo.toLowerCase().charAt(0);
+         
+      } while (repeat == 'y'); System.out.println("Goodbye!");
+
+   //#8
+
+
+      do
+      {
+         System.out.println("Enter a number or type \"-1\" to exit");
+
+
+
+      } while ();
    
       
       
