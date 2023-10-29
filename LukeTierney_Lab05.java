@@ -1,5 +1,6 @@
 //lab 05 :3
 
+import java.beans.beancontext.BeanContextMembershipListener;
 import java.io.*;
 import java.util.Scanner;
 import java.util.Random;
@@ -9,7 +10,7 @@ public class LukeTierney_Lab05
    public static void main(String[] args) throws IOException
    {
    Scanner keyboard = new Scanner(System.in);
-   
+/* 
    //#2
       int number = 0;
       
@@ -164,34 +165,85 @@ public class LukeTierney_Lab05
    //#10
 
       //declare variables here
-      int userInput10;
-      int count10 = 0;
-      double average10;
-      int min10 = 2000000000;
-      int max10 = 0;
-      int userInputNumber10;
-      int sum10 = 0;
-      int breaker10;
-      int integers10;
-      int inputAmount10;
-      int inputAmountSpecifier = 0;
+      double sum10 = 0;
+      int loops10 = 1;
+      double enterAmount10;
+      double user10;
+      double min10 = Integer.MAX_VALUE;
+      double max10 = Integer.MIN_VALUE;
 
-       /*
-       do this shit later because i suck
-       //start do while sequence
-       do 
-       {
-         System.out.println("How many numbers do you want to enter? ");
-         
+      System.out.println("\nHow many numbers would you like to input? ");
+      enterAmount10 = keyboard.nextInt();
+      //start sequence here
+      do
+      {
+         for (user10 = 0; user10<= min10; user10++);
+         {
+            System.out.println("Enter number " + loops10++ + ": ");
 
-         
-         
-       }
-       */
+            user10 = keyboard.nextDouble();
+         }
+
+         sum10 += user10;
+         //declare min and max variables
+         if (user10 > max10)
+         {
+            max10 = user10;
+         }
+         if (user10 < min10) 
+         {
+            min10 = user10;
+         }
+      } while (enterAmount10 >= loops10);
+      //print sequences
+      System.out.println("Sum of numbers: " + sum10);
+      System.out.println("Average of numbers: " + (sum10/enterAmount10));
+      System.out.println("Maximum value: " + max10);
+      System.out.println("Minimum value: " + min10);
 
    //#11
-       
-   
       
+      int userInput11;
+
+      //user input
+      System.out.println("Enter a number for the sequence: ");
+      userInput11 = keyboard.nextInt();
+
+      //loop
+      System.out.print("\nThe first " + userInput11 + "numbers in the Fabonacci sequence");
+
+      int firstTerm = 0, secondTerm = 1;
+      System.out.println("Fibonacci Series till " + userInput11 + " terms:");
+  
+      for (int i = 1; i <= userInput11; ++i) {
+        System.out.print(firstTerm + ", ");
+  
+        // compute the next term
+        int nextTerm = firstTerm + secondTerm;
+        firstTerm = secondTerm;
+        secondTerm = nextTerm; }
+*/
+   //#12
+      final int BASE_SIZE = 8;
+
+      for (int r = 0; r < BASE_SIZE; r++)
+      {
+         for (int c = 0; c < (r+1); c++)
+         {
+            System.out.print("*");
+         }
+         System.out.println();
+      }
+      System.out.println("\n");
+      
+      final int BASE_SIZE2 = 8;
+ 
+      //for 
+
+         
+
+
+
+   
    }
 }
