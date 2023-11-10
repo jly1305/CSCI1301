@@ -22,8 +22,8 @@ public class Luke_Lab_6_Part1
       CubePower(10);
       CubePower(25);
       System.out.println("Enter an integer number");
-      int input = keyboard.nextInt();
-      multTable(input);
+      int userInput = keyboard.nextInt();
+  
       
    }
       
@@ -58,23 +58,23 @@ public class Luke_Lab_6_Part1
       System.out.println(cube);
    }
    
-   public static void multTable(int a);
+   public static void multTable (int userInput)
    {
-      if (input < 0)
+      int i = 0;  
+     
+      if (userInput > 0) 
       {
-         System.out.println("Error. Enter a number greater than zero.");
+         while ( i <= 10)
+         {
+            System.out.print(i + " * " + userInput + " = " + (i * userInput));
+            i++;
+         }
       }
       else
       {
-         for (i = 0; i <= input; i++)
-         {
-            for (j = 0; j <= 10; j++)
-            {
-               System.out.print(input * j);
-            } System.out.println(); 
-         }
+         System.out.println("Please enter a positive integer");
       }
-   
+     
    }
       
       
