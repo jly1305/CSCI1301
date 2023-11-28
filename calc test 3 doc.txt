@@ -1,0 +1,17 @@
+calc test 3 doc
+
+	first question is mandatory. go through the entire process of graphing x-2/e^x. i didnt know how to do this one so yea
+
+	next question i did was finding derivatives using lhopitals rule. first derivative was sin0 / cos0 -1. i ended up getting 0 due to the second derivative being 0/-1 but some people got Dne or something
+
+	the next question for this set was x^3/e^x. by the third derivative , you get 6/inf which is 0
+
+	the next two questions were rolles theorem. for the first one i did, #9, i proved that rolles theorem was not followed by proving that f(a)=/=f(b) in the interval [a,b]
+	basically, if you plug in the endpoints to f(x), and  they are not equal to eachother, then rolles theorem does not apply.
+
+	for the next rolles theorem question, i proved that the endpoints were equal, and that the function was continuous and differnetiable on its interval by using domain.
+	after that, i used f'(c)= f(b)-f(a) / b - a to prove that C was an element of [a,b]. this was further proven true when c was 1/2 and [0,1] were the set points. i think the number for  this was x^2 - x. 
+
+	for my last problem , i did the MVT of some thing. i dont remember the problem, but i do remember that the answer was x= sqrt 1/3, and it is between [0,1]. my equation was like 3x^2 = 1, and i did x^2 = 1/3 and took the square root. you also have to "prove" that it follows the MVT, but that is simple as the function is continuous and that implies differentiaility.
+
+	thats all i remember, the other questions used inequalities, finding the tangent line, and using arcsin arctan arccos for harder derivatives. i didnt do them
